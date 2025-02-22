@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registar_clientes"
+    android:orientation="vertical"
+    android:background="@drawable/fonforegistro">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestion de Clientes"
+        android:textSize="30sp"
+        android:textColor="#CCEEFF"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="7">
+
+        <TextView
+            android:text="DNI:"
+            android:layout_marginStart="40dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="30dp"
+            android:layout_column="0"
+            android:layout_row="0"/>
+        <EditText
+            android:id="@+id/txtDniCliente"
+            android:layout_width="280dp"
+            android:hint="Ingrese Dni"
+            android:layout_column="1"
+            android:layout_row="0"/>
+        <TextView
+            android:text="APELLIDOS :"
+            android:layout_marginStart="40dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="30dp"
+            android:layout_column="0"
+            android:layout_row="1"/>
+        <EditText
+            android:id="@+id/txtApellidoCLiente"
+            android:layout_width="280dp"
+            android:hint="Ingrese Apellido"
+            android:layout_column="1"
+            android:layout_row="1"/>
+        <TextView
+            android:text="NOMBRE :"
+            android:layout_marginStart="40dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="30dp"
+            android:layout_column="0"
+            android:layout_row="2"/>
+        <EditText
+            android:id="@+id/txtNombreCliente"
+            android:layout_width="280dp"
+            android:hint="Ingrese Nombre"
+            android:layout_column="1"
+            android:layout_row="2"/>
+        <TextView
+            android:text="TELEFONO:"
+            android:layout_marginStart="40dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="30dp"
+            android:layout_column="0"
+            android:layout_row="3"/>
+        <EditText
+            android:id="@+id/txtTelefonoCliente"
+            android:layout_width="280dp"
+            android:hint="Ingrese Telefoo"
+            android:layout_column="1"
+            android:layout_row="3"/>
+        <TextView
+            android:text="CORREO:"
+            android:layout_marginStart="40dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="30dp"
+            android:layout_column="0"
+            android:layout_row="4"/>
+        <EditText
+            android:id="@+id/txtCorreoCliente"
+            android:layout_width="280dp"
+            android:hint="Ingrese Correo"
+            android:layout_column="1"
+            android:layout_row="4"/>
+        <TextView
+            android:text="Direccion:"
+            android:layout_marginStart="40dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="30dp"
+            android:layout_column="0"
+            android:layout_row="5"/>
+        <EditText
+            android:id="@+id/txtDireccionCliente"
+            android:layout_width="280dp"
+            android:hint="Ingrese Direccion"
+            android:layout_column="1"
+            android:layout_row="5"/>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="1">
+
+    <Button
+        android:id="@+id/btnregistarcliente"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:text="Registar"
+        android:backgroundTint="#BA55D3"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btnlimpiarclienete"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:text="Limpiar"
+        android:backgroundTint="#BA55D3"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btnCancelarcliente"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:text="Cancelar"
+        android:backgroundTint="#BA55D3"
+        android:textSize="20dp"/>
+
+</GridLayout>
+</LinearLayout>
+</LinearLayout>
